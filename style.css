@@ -1,0 +1,116 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url("https://cdn.glitch.com/621157e0-9f95-45de-ba57-6a57e917e6f6%2Fstreet.jpg?v=1611916030451");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+li {
+  list-style-type: none;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.container {
+  background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 30px;
+  height: 20px;
+  padding: 50px;
+  display: table;
+  background-color: black;
+  text-align: center;
+  border: 5px dashed;
+}
+
+.large {
+  font-size: 50px;
+}
+
+.vintage {
+  letter-spacing: 12px;
+}
+
+.light {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 70px;
+  animation: light 2s linear infinite;
+}
+
+@keyframes light {
+  0%,
+  100% {
+    text-shadow: -3px 1px 4px #23FF00;
+    blur-radius: 2px;
+    color: #fff400;
+  }
+  75% {
+    text-shadow: 3px 3px 7px #FF0000;
+    blur-radius: 2px;
+    color: #fff400;
+  }
+  50% {
+    color: #f05454;
+  }
+  25% {
+    color: #2D5F21;
+  }
+}
+
+.description {
+  font-size: 30px;
+  padding: 10px;
+  position: absolute;
+  left: 5%;
+  width: 50%;
+  margin-top: 80px;
+  color: white;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  margin-left: 60%;
+  margin-top: 5%;
+}
+
+.column {
+  flex: 30%;
+  padding: 1px 5px 2px;
+}
+
+.column img {
+  margin-top: 2px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+img {
+  filter: grayscale(100%) blur(2px);
+}
+
+img:hover{
+  filter: grayscale(0%) blur(0px);
+}
+
+h1{
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0.1vh;
+  align-self: flex-end;
+}
+
+a:visited{
+  color: red;
+}
+a {
+  color: white;
+}
